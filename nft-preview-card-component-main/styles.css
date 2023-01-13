@@ -38,7 +38,7 @@ body {
   border-radius: 12px;
 }
 
-.image-container:hover .equilibrium {
+.image-container:hover .subject-image {
   opacity: 0.7;
   cursor: pointer;
 }
