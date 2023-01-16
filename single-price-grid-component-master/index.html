@@ -11,12 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Single Price Grid Component</title>
   </head>
   <body>
-    <div class="container">
-      <div class="inform-container">
+    <main>
+      <section class="inform-container">
         <h1>Join Our Community</h1>
         <h2>30-day, hassle-free money back guarantee</h2>
         <p>
@@ -24,25 +24,30 @@
           reviews. Perfect for any developers who are serious about honing their
           skills.
         </p>
-      </div>
-      <div class="action-container">
-        <div class="subscribe-container">
+	</section>
+      <section class="action-container">
+        <section class="subscribe-container">
           <h1>Monthly Subscription</h1>
-          <div class="price">$29<span class="duration">per month</span></div>
-          <p>Full access for less than $1 a day</p>
-        </div>
-        <button>Sign Up</button>
-        <div class="why-container">
+          <div class="price">
+			<p class="amount">$29</p>
+		  <p class="duration">per month</span></p>
+		  </div>
+          <p class="description">Full access for less than $1 a day</p>
+          <button>Sign Up</button>
+		</section>
+        <section class="why-container">
           <h1>Why Us</h1>
           <p>
-            Tutorials by industry experts Peer & expert code review Coding
-            exercises <br />
-            Access to our GitHub repos Community forum <br />
-            Flashcard decks <br />
+            Tutorials by industry experts <br> 
+			Peer & expert code review <br>
+			Coding exercises <br>
+            Access to our GitHub repos <br>
+			Community forum <br>
+            Flashcard decks <br>
             New videos every week
           </p>
-        </div>
-      </div>
-    </div>
+        </section>
+	</section>
+</section>
   </body>
 </html>
