@@ -12,25 +12,24 @@
 
 * {
   align-items: center;
+  margin: 0px;
   font-family: "Karla", sans-serif;
   font-weight: 400;
-  margin: 0px;
 }
 
 body {
-  background-color: hsl(218, 22%, 67%);
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 7rem;
+  margin: 10vh 0vh;
+  background-color: var(--lightgrey);
 }
 
 main {
-  color: var(--white);
   width: 19.4rem;
   border-radius: 0.5rem;
-  box-shadow: 0.1rem 1rem 1.1rem var(--boxshadow);
   background-color: var(--white);
+  color: var(--white);
+  box-shadow: 0.1rem 1rem 1.1rem var(--boxshadow);
 }
 
 p {
@@ -40,21 +39,21 @@ p {
 /* Information container */
 .inform-container {
   padding: 2.1rem 1.5rem;
-  background-color: var(--white);
   border-radius: 0.3rem;
+  background-color: var(--white);
 }
 
 .inform-container h1 {
-  color: var(--cyan);
   font-size: 1.22rem;
   font-weight: 700;
+  color: var(--cyan);
 }
 
 .inform-container h2 {
   padding-top: 1.4rem;
-  color: var(--brightyellow);
   font-size: 0.93rem;
   font-weight: 700;
+  color: var(--brightyellow);
 }
 
 .inform-container p {
@@ -64,20 +63,20 @@ p {
 }
 
 .action-container {
-  background-color: var(--cyan);
   display: grid;
-  /* border: 1px solid var(--cyanlight); */
+  border-radius: 0rem 0rem 0.3rem 0.3rem;
+  background-color: var(--cyan);
 }
 
 .subscribe-container {
-  background-color: var(--cyan);
   padding: 1.4rem;
+  background-color: var(--cyan);
 }
 
 .subscribe-container h1 {
+  padding: 0.4rem 0rem;
   font-size: 1.1rem;
   font-weight: 700;
-padding: .4rem 0rem;
 }
 
 .subscribe-container p {
@@ -101,32 +100,33 @@ padding: .4rem 0rem;
 }
 
 .subscribe-container .description {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 .subscribe-container button {
-  margin-top: 1.6rem;
   width: 100%;
   padding: 0.9rem 1rem;
-  box-shadow: 0.1rem 1rem 1rem var(--boxshadow);
-  background-color: var(--brightyellow);
-  color: white;
+  margin-top: 1.6rem;
   border: none;
   border-radius: 0.3rem;
+
   font-size: 1rem;
   font-weight: 700;
+
+  background-color: var(--brightyellow);
+  color: white;
+  box-shadow: 0.1rem 1rem 1rem var(--boxshadow);
 }
 
 .why-container {
-  background-color: var(--cyanlight);
-  padding: 1.4rem; 
+  padding: 1.4rem;
   border-radius: 0rem 0rem 0.3rem 0.3rem;
+  background-color: var(--cyanlight);
 }
 
 .why-container h1 {
   font-size: 1.1rem;
   font-weight: 700;
-
 }
 .why-container p {
   padding-top: 1.3rem;
@@ -137,9 +137,6 @@ padding: .4rem 0rem;
 /* Desktop Layout */
 
 @media only screen and (min-width: 635px) {
-  :root {
-    /* font-size: 18px; */
-  }
   main {
     width: 635px;
   }
@@ -162,7 +159,7 @@ padding: .4rem 0rem;
 
   .action-container {
     grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
+    grid-template-rows: 1;
     border-radius: 0rem 0rem 0.3rem 0.3rem;
   }
 
@@ -171,6 +168,9 @@ padding: .4rem 0rem;
     padding: 2.5rem;
   }
 
+  .subscribe-container .description{
+	font-size: .9rem;
+  }
   .why-container {
     border-radius: 0rem 0rem 0.3rem 0rem;
     padding: 2.5rem;
