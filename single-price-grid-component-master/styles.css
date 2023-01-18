@@ -3,7 +3,7 @@
 :root {
   --white: #ffffff;
   --cyan: hsl(179, 62%, 43%);
-  --cyanlight: hsl(179, 62%, 45%);
+  --cyanlight: hsl(179, 62%, 47%);
   --brightyellow: hsl(71, 73%, 54%);
   --lightgrey: hsl(204, 43%, 93%);
   --grayishblue: hsl(218, 22%, 67%);
@@ -58,8 +58,8 @@ p {
 }
 
 .inform-container p {
-  padding-top: 1.2rem;
-  line-height: 1.5rem;
+  padding-top: .8rem;
+  line-height: 1.7rem;
   color: var(--grayishblue);
 }
 
@@ -132,7 +132,7 @@ p {
 .why-container p {
   padding-top: 1.3rem;
   line-height: 1.25rem;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 /* Desktop Layout */
