@@ -18,7 +18,11 @@
 	
 	  <article class="product-container">
 		<section class="illustration">
-			<img src="images/image-product-mobile.jpg" alt="product image" style="max-width: 500px">
+			<picture class="illustration">
+				<source media="(max-width: 600)" srcset="images/image-product-mobile.jpg">
+			<source media="(min-width:601px)" srcset="images/image-product-desktop.jpg">
+			<img src="images/image-product-mobile.jpg" alt="product image" >
+			</picture>
 		</section>
 		</section>
 		<section class="text-content">
