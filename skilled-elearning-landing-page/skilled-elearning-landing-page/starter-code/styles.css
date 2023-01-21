@@ -1,0 +1,42 @@
+:root {
+	--lightgray: hsl(0,0%,95%);
+	--purple: hsl(234, 25%, 52%);
+	--deeppurple: hsl(234, 54%, 16%);
+	--grayblue: hsl(232, 10%, 56%);
+	--darkpink: hsl(341, 92%, 62%);
+	--pink:hsl(341,100%,83%);
+	--white: hsl(0, 0%, 100%);
+	--orange: hsl(13,100%,64%);
+	--magenta: hsl(322, 87%, 55%);
+	--blue: hsl(237, 100%, 64%);
+	--grad-sunset: linear-gradient(to bottom, var(--orange), var(--magenta));
+	--grad-miami: linear-gradient(to bottom, var(--blue), var(--magenta));
+
+	font-size: 1rem;
+}
+
+*{
+margin: 0;
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-weight: 500;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--verydarkblue1);
+}
+
+header, main, footer{
+  width: 15.4rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid red;
+  background-color: var(--white);
+}
+
+header>img {
+	width: 100%;
+}
