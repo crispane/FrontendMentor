@@ -1,24 +1,25 @@
 :root {
-	--lightgray: hsl(0,0%,95%);
-	--purple: hsl(234, 25%, 52%);
-	--deeppurple: hsl(234, 54%, 16%);
-	--grayblue: hsl(232, 10%, 56%);
-	--darkpink: hsl(341, 92%, 62%);
-	--pink:hsl(341,100%,83%);
-	--white: hsl(0, 0%, 100%);
-	--orange: hsl(13,100%,64%);
-	--magenta: hsl(322, 87%, 55%);
-	--blue: hsl(237, 100%, 64%);
-	--grad-sunset: linear-gradient(to bottom, var(--orange), var(--magenta));
-	--grad-miami: linear-gradient(to bottom, var(--blue), var(--magenta));
-
-	font-size: 1rem;
+  --offwhite: hsl(236, 100%, 97%);
+  --lightgray: hsl(0, 0%, 95%);
+  --purple: hsl(234, 25%, 52%);
+  --deeppurple: hsl(234, 54%, 16%);
+  --grayblue: hsl(232, 10%, 56%);
+  --darkpink: hsl(341, 92%, 62%);
+  --pink: hsl(341, 100%, 83%);
+  --white: hsl(0, 0%, 100%);
+  --orange: hsl(13, 100%, 64%);
+  --magenta: hsl(322, 87%, 55%);
+  --blue: hsl(237, 100%, 64%);
+  --grad-sunset: linear-gradient(to bottom, var(--orange), var(--magenta));
+  --grad-miami: linear-gradient(to bottom, var(--blue), var(--magenta));
+  --grad-white: linear-gradient(to bottom, var(--white), var(--offwhite));
+  font-size: 1rem;
 }
 
-*{
-margin: 0;
-font-family: 'Plus Jakarta Sans', sans-serif;
-font-weight: 500;
+* {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
 }
 
 body {
@@ -26,17 +27,129 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--verydarkblue1);
 }
 
-header, main, footer{
-  width: 15.4rem;
-  padding: 1rem;
-  border-radius: 1rem;
-  border: 1px solid red;
+header,
+main,
+footer {
+  width: 21.438rem;
   background-color: var(--white);
+  padding: 1rem;
 }
 
-header>img {
-	width: 100%;
+header .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem;
+}
+
+.logo {
+  scale: 78%;
+  margin-left: -0.75rem;
+}
+
+.get-started {
+  width: 8.75rem;
+  height: 3rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--deeppurple);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-top: 2.4rem;
+}
+
+p {
+  margin-top: 1.7rem;
+  line-height: 1.625rem;
+  color: var(--grayblue);
+}
+
+header > .sunset-button {
+  width: 167px;
+  height: 56px;
+  margin-top: 1.5rem;
+  background: var(--grad-sunset);
+}
+
+header > .hero-image {
+  width: 100%;
+  scale: 127%;
+  margin-top: 4.325584rem;
+}
+
+main {
+  background: var(--grad-white);
+  padding-bottom: 5rem;
+}
+main > * {
+  margin-top: 1rem;
+}
+
+main > h2 {
+  padding: 1.5rem 1.813rem 2rem 1.75rem;
+  margin: -1rem 0rem -0.5rem 0rem;
+  border-radius: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  background: var(--grad-sunset);
+  color: var(--white);
+}
+
+section {
+  margin: 2.9rem 0rem 0rem 0rem;
+  padding: 0rem 1.75rem;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+}
+
+.main-icons {
+  position: absolute;
+  margin-top: -1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding-top: 3.5rem;
+}
+
+section p {
+  margin-top: 1rem;
+}
+
+section a {
+  display: inline-block;
+  margin: 1.5rem 0rem 2rem 0rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--darkpink);
+  text-decoration: none;
+}
+
+.business-container {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.25rem 1rem;
+  background-color: var(--deeppurple);
+}
+footer .miami-button {
+  background: var(--grad-miami);
+}
+
+footer img {
+
 }
