@@ -37,7 +37,9 @@ footer {
   background-color: var(--white);
 }
 
-header .head {
+/*  Header */
+
+.head {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,6 +89,8 @@ p {
   scale: 127%;
   margin-top: 4.325584rem;
 }
+
+/*  Main */
 
 main {
   background: var(--grad-white);
@@ -149,6 +153,7 @@ section a {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+/*  Footer */
 footer {
   display: flex;
   justify-content: space-between;
@@ -161,3 +166,8 @@ footer {
 footer .miami-button {
   background: var(--grad-miami);
 }
+
+/*  Tablet Version */
+
+
+/*  Desktop Version */
