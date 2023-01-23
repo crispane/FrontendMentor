@@ -33,8 +33,8 @@ header,
 main,
 footer {
   width: 21.438rem;
-  background-color: var(--white);
   padding: 1rem;
+  background-color: var(--white);
 }
 
 header .head {
@@ -52,18 +52,21 @@ header .head {
 .get-started {
   width: 8.75rem;
   height: 3rem;
+
   border: none;
   border-radius: 2rem;
-  background-color: var(--deeppurple);
-  color: var(--white);
+
   font-size: 1rem;
   font-weight: 700;
+
+  background-color: var(--deeppurple);
+  color: var(--white);
 }
 
 h1 {
+  margin-top: 2.4rem;
   font-size: 2.5rem;
   font-weight: 800;
-  margin-top: 2.4rem;
 }
 
 p {
@@ -72,14 +75,14 @@ p {
   color: var(--grayblue);
 }
 
-header > .sunset-button {
-  width: 167px;
-  height: 56px;
+.sunset-button {
+  width: 10.4rem;
+  height: 3.5rem;
   margin-top: 1.5rem;
   background: var(--grad-sunset);
 }
 
-header > .hero-image {
+.hero-image {
   width: 100%;
   scale: 127%;
   margin-top: 4.325584rem;
@@ -89,6 +92,7 @@ main {
   background: var(--grad-white);
   padding-bottom: 5rem;
 }
+
 main > * {
   margin-top: 1rem;
 }
@@ -97,9 +101,11 @@ main > h2 {
   padding: 1.5rem 1.813rem 2rem 1.75rem;
   margin: -1rem 0rem -0.5rem 0rem;
   border-radius: 0.7rem;
+
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2rem;
+
   background: var(--grad-sunset);
   color: var(--white);
 }
@@ -108,6 +114,7 @@ section {
   margin: 2.9rem 0rem 0rem 0rem;
   padding: 0rem 1.75rem;
   border-radius: 0.5rem;
+
   background-color: var(--white);
   box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
 }
@@ -116,10 +123,11 @@ section {
   position: absolute;
   margin-top: -1.5rem;
 }
+
 h3 {
+  padding-top: 3.5rem;
   font-size: 1.25rem;
   font-weight: 800;
-  padding-top: 3.5rem;
 }
 
 section p {
@@ -129,8 +137,10 @@ section p {
 section a {
   display: inline-block;
   margin: 1.5rem 0rem 2rem 0rem;
+
   font-size: 1.125rem;
   font-weight: 700;
+
   color: var(--darkpink);
   text-decoration: none;
 }
@@ -144,12 +154,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 2.25rem 1rem;
+
   background-color: var(--deeppurple);
 }
+
 footer .miami-button {
   background: var(--grad-miami);
-}
-
-footer img {
-
 }
