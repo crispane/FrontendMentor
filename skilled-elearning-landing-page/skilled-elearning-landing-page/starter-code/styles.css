@@ -27,19 +27,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--lightgray);
 }
 
 header,
+.intro,
 main,
 footer {
   width: 21.438rem;
-  padding: 1rem;
+  padding: 1rem 1rem 0rem 1rem;
   background-color: var(--white);
 }
 
 /*  Header */
 
-.head {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,6 +53,7 @@ footer {
   margin-left: -0.75rem;
 }
 
+/*  button */
 .get-started {
   width: 8.75rem;
   height: 3rem;
@@ -101,26 +104,28 @@ main > * {
   margin-top: 1rem;
 }
 
-main > h2 {
-  padding: 1.5rem 1.813rem 2rem 1.75rem;
-  margin: -1rem 0rem -0.5rem 0rem;
-  border-radius: 0.7rem;
-
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 2rem;
-
-  background: var(--grad-sunset);
-  color: var(--white);
-}
-
 section {
+  width: 17.938rem;
   margin: 2.9rem 0rem 0rem 0rem;
   padding: 0rem 1.75rem;
   border-radius: 0.5rem;
 
   background-color: var(--white);
   box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+}
+
+.main-heading {
+  margin-top: 0rem;
+  padding: 1.5rem 1.813rem 2rem 1.75rem;
+  border-radius: 0.7rem;
+
+  background: var(--grad-sunset);
+  color: var(--white);
+}
+
+h2 {
+  font-weight: 800;
+  line-height: 2rem;
 }
 
 .main-icons {
@@ -154,6 +159,7 @@ section a {
 }
 
 /*  Footer */
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -168,6 +174,50 @@ footer .miami-button {
 }
 
 /*  Tablet Version */
+@media screen and (min-width: 43.5em) {
+  header,
+  .intro,
+  main,
+  footer {
+    width: 43.5rem;
+    padding: 0rem 2rem 0rem 2rem;
+  }
 
+  header {
+    padding-top: 1.5rem;
+  }
+
+  .intro {
+    display: flex;
+    overflow: hidden;
+	padding-bottom: 2rem;
+  }
+
+  .hero-image {
+    position: relative;
+    width: 150%;
+    bottom: 6rem;
+    left: 3.4rem;
+    scale: 158%;
+    border: 1px solid red;
+  }
+
+  .intro {
+  }
+
+  .info {
+    position: static;
+    margin: 4rem 0rem 0rem 0rem;
+    width: 119rem;
+    border: 1px solid red;
+  }
+
+  main {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	padding-top: 2rem;
+  }
+}
 
 /*  Desktop Version */
