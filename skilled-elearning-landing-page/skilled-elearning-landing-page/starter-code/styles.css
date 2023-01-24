@@ -45,18 +45,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0rem;
+	   transform: translateY(1rem);
 }
 
 .logo {
   scale: 78%;
-  margin-left: -0.75rem;
+  margin-left: -.8rem;
 }
 
 /*  button */
 .get-started {
   width: 8.75rem;
   height: 3rem;
+  /* margin-right: .47rem; */
 
   border: none;
   border-radius: 2rem;
@@ -105,9 +106,10 @@ main > * {
 }
 
 section {
-  width: 17.938rem;
-  margin: 2.9rem 0rem 0rem 0rem;
-  padding: 0rem 1.75rem;
+  /* width: 17.938rem; */
+  width: 17.8rem;
+  margin-top: 2.9rem;
+  padding: 0rem 1.6rem 0rem 1.8rem;
   border-radius: 0.5rem;
 
   background-color: var(--white);
@@ -116,7 +118,6 @@ section {
 
 .main-heading {
   margin-top: 0rem;
-  padding: 1.5rem 1.813rem 2rem 1.75rem;
   border-radius: 0.7rem;
 
   background: var(--grad-sunset);
@@ -124,6 +125,7 @@ section {
 }
 
 h2 {
+  padding: 1.5rem 0.3rem 1.5rem;
   font-weight: 800;
   line-height: 2rem;
 }
@@ -145,7 +147,7 @@ section p {
 
 section a {
   display: inline-block;
-  margin: 1.5rem 0rem 2rem 0rem;
+  margin: 1.5rem 0rem 2.3rem 0rem;
 
   font-size: 1.125rem;
   font-weight: 700;
@@ -179,12 +181,15 @@ footer .miami-button {
   .intro,
   main,
   footer {
-    width: 43.5rem;
-    padding: 0rem 2rem 0rem 2rem;
+    width: 44rem;
+    padding: 2rem 2rem 2rem 2rem;
   }
 
   header {
-    padding-top: 1.5rem;
+	   position: relative;
+	   transform: translateY(2rem);
+    padding: 1.5rem 2rem 0 2rem;
+
   }
 
   .intro {
@@ -199,17 +204,12 @@ footer .miami-button {
     bottom: 6rem;
     left: 3.4rem;
     scale: 158%;
-    border: 1px solid red;
-  }
-
-  .intro {
   }
 
   .info {
     position: static;
-    margin: 4rem 0rem 0rem 0rem;
+    margin: 4rem 0rem 0rem .4rem;
     width: 119rem;
-    border: 1px solid red;
   }
 
   main {
@@ -218,6 +218,20 @@ footer .miami-button {
 	flex-flow: row wrap;
 	padding-top: 2rem;
   }
+  
+  h2 {
+  padding: 3.5rem 0.3rem 1.5rem;
+  }
+
+  section {
+	margin: 0 0rem 3.6rem 0rem;
+  }
+
+  .business-container {
+	filter: none;
+  }
+
+
 }
 
 /*  Desktop Version */
