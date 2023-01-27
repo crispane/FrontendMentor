@@ -47,17 +47,15 @@ header {
 }
 
 .top {
-  display: relative;
-}
-
-.top-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  scale: 0.78;
+  transform: scale(0.78);
+  margin-left: -0.78rem;
+  margin-top: 0.2rem;
 }
 
 /*  buttons */
@@ -112,10 +110,9 @@ main > * {
 }
 
 section {
-  /* width: 17.938rem; */
-  width: 17.8rem;
-  margin-top: 2.9rem;
-  padding: 0rem 1.6rem 0rem 1.8rem;
+  width: 18.066rem;
+  margin-top: 2.5rem;
+  padding: 0rem 1.6rem 0rem 1.766rem;
   border-radius: 0.7rem;
 
   background-color: var(--white);
@@ -131,8 +128,8 @@ section {
 }
 
 h2 {
-  padding: 1.5rem 0.3rem 1.5rem;
-  font-weight: 800;
+  padding: 1.5rem 0.3rem 2rem 0rem;
+  font-weight: 700;
   line-height: 2rem;
 }
 
@@ -148,7 +145,7 @@ h3 {
 }
 
 section p {
-  margin-top: 1rem;
+  margin-top: 1.066rem;
 }
 
 section a {
@@ -169,13 +166,12 @@ section a {
 /*  Footer */
 
 footer {
-  padding-bottom: 1rem;
+  padding:1.1rem 1rem 1rem 1rem;
   margin-bottom: 2rem;
   background-color: var(--deeppurple);
 }
 .footer-container {
-  border: 1px solid red;
-  padding: 0rem .5rem 0rem 0rem;
+  padding: 1.1rem 0rem 1.1rem 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -189,51 +185,44 @@ footer .miami-button {
 /*  Tablet Version */
 
 @media screen and (min-width: 44em) {
-  header {
-    width: 48rem;
-    padding: 0;
-  }
-
+  header,
   main,
   footer {
-    width: 44rem;
-    padding: 2rem 2rem 2rem 2.1rem;
+    width: 46rem;
   }
 
   header {
     display: flex;
-    padding-bottom: 2rem;
-  }
-
-  .top-container {
-    padding: 1.6rem 2.5rem 0rem 1.68rem;
-  }
-
-  .intro {
-    display: flex;
-    /* margin: 4rem 0rem 0rem 0.4rem; */
+    flex-direction: row;
     overflow: clip;
   }
 
-  .info {
-    min-width: 25rem;
-    padding: 3.8rem 0rem 0rem 2.4rem;
+  .top {
+	position: absolute;
+	width: 43rem;
+	margin: .444rem 0rem 0rem 1.466rem;
   }
-  .hero-image {
-    position: relative;
-    width: 100%;
-    bottom: 2.8rem;
-    left: 7.2rem;
-    scale: 211%;
 
+  .info {
+    position: relative;
+    min-width: 25rem;
+    padding: 7.166rem 0rem 0rem 1.444rem;
+  }
+
+  .hero-image {
+    width: 174.7%;
+    position: relative;
+    bottom: 6.366rem;
+    left: 0.4rem;
     z-index: 1;
   }
 
   main {
+	width: 43.666rem;
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
-    padding-top: 9rem;
+    padding: .4rem 2.2rem 1.766rem 2.144rem;
   }
 
   h2 {
@@ -241,11 +230,27 @@ footer .miami-button {
   }
 
   section {
+	width: 17.8rem;
     margin: 0 0rem 3.6rem 0rem;
   }
 
+  section .main-icons, h3, p {
+	margin-left: .2rem;
+	margin-right: -.5rem;
+  }
+
+  section a {
+	margin-left: .2rem;
+  }
   .business-container {
     filter: none;
+  }
+
+  footer {
+	padding-bottom: 1.2rem;
+  }
+  .footer-container {
+	margin: 0rem 1.444rem;
   }
 }
 
@@ -256,7 +261,7 @@ footer .miami-button {
     font-size: 1.125rem;
   }
   header {
-	width: 80rem;
+    width: 80rem;
   }
 
   main,
@@ -265,40 +270,27 @@ footer .miami-button {
   }
 
   .top {
-	position: relative;
-	z-index: 1;
-  }
-
-  .top-container {
-	background-color: transparent;
-	border: 1px solid #000;
-	 margin: 0rem 8rem;
-	 padding: 1.2rem 1.4rem 1rem 1.066rem;
-  }
-
-  .top-container > .get-started {
-    transform: scale(1.05);
-    font-size: 0.95rem;
+    position: relative;
   }
 
   .logo {
-	scale: 1;
+    scale: 1;
   }
 
   .info {
-	width: 90rem;
-	padding: 3rem 0rem 0rem 9.2rem;
+    width: 90rem;
+    padding: 3rem 0rem 0rem 9.2rem;
   }
 
   .info > p {
-	padding-right: 7rem;
+    padding-right: 7rem;
   }
 
   .info > button {
-	scale: .9;
-	margin-top: 2rem;
-	margin-left: -.6rem;
-	font-size: 1.1rem;
+    scale: 0.9;
+    margin-top: 2rem;
+    margin-left: -0.6rem;
+    font-size: 1.1rem;
   }
   .hero-image {
     scale: 145.5%;
@@ -306,24 +298,9 @@ footer .miami-button {
     left: 9.6rem;
   }
 
-  .intro {
-    display: flex;
-    flex-direction: row;
-	overflow: clip;
-  }
-
   h1 {
     margin-top: 5.55rem;
     font-size: 3.1rem;
-  }
-
-  .intro > p {
-    margin-right: 10rem;
-  }
-
-  .intro > button {
-    margin-top: 2.2rem;
-    width: 9.2rem;
   }
 
   main {
@@ -359,8 +336,8 @@ footer .miami-button {
   }
 
   .footer-container .logo {
-	margin-left: 7rem;
-	scale: 1;
+    margin-left: 7rem;
+    scale: 1;
   }
 
   footer button {
