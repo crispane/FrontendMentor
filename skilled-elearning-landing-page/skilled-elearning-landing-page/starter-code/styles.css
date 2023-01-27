@@ -8,11 +8,16 @@
   --pink: hsl(341, 100%, 83%);
   --white: hsl(0, 0%, 100%);
   --orange: hsl(13, 100%, 64%);
+  --orangewhite: hsl(13, 100%, 80%);
   --magenta: hsl(322, 87%, 55%);
+  --magentawhite: hsl(322, 87%, 75%);
   --blue: hsl(237, 100%, 64%);
-  --grad-sunset: linear-gradient(to bottom, var(--orange), var(--magenta));
-  --grad-miami: linear-gradient(to bottom, var(--blue), var(--magenta));
-  --grad-white: linear-gradient(to bottom, var(--white), var(--offwhite));
+  --bluewhite: hsl(237, 100%, 80%);
+  --grad-sunset: linear-gradient(180deg, var(--orange), var(--magenta));
+  --grad-sunsetwhite: linear-gradient(180deg, var(--orangewhite), var(--magentawhite));
+  --grad-miami: linear-gradient(180deg, var(--blue), var(--magenta));
+  --grad-miamiwhite: linear-gradient(180deg, var(--bluewhite), var(--magentawhite));
+  --grad-white: linear-gradient(180deg, var(--white), var(--offwhite));
   font-size: 1rem;
 }
 
@@ -31,7 +36,6 @@ body {
 }
 
 header,
-.intro,
 main,
 footer {
   width: 21.438rem;
@@ -42,18 +46,24 @@ footer {
 /*  Header */
 
 header {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transform: translateY(1rem);
 }
 
 .logo {
-  scale: 78%;
-  margin-left: -0.8rem;
+  transform: scale(0.78);
+  margin-left: -0.78rem;
+  margin-top: 0.2rem;
 }
 
-/*  button */
+/*  buttons */
 .get-started {
   width: 8.75rem;
   height: 3rem;
@@ -64,20 +74,8 @@ header {
   font-size: 1rem;
   font-weight: 700;
 
-  background-color: var(--deeppurple);
+  background: var(--deeppurple);
   color: var(--white);
-}
-
-h1 {
-  margin-top: 2.4rem;
-  font-size: 2.5rem;
-  font-weight: 800;
-}
-
-p {
-  margin-top: 1.7rem;
-  line-height: 1.625rem;
-  color: var(--grayblue);
 }
 
 .sunset-button {
@@ -85,6 +83,19 @@ p {
   height: 3.5rem;
   margin-top: 1.5rem;
   background: var(--grad-sunset);
+}
+
+h1 {
+  margin-top: 2.4rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--deeppurple);
+}
+
+p {
+  margin-top: 1.7rem;
+  line-height: 1.625rem;
+  color: var(--grayblue);
 }
 
 .hero-image {
@@ -105,10 +116,9 @@ main > * {
 }
 
 section {
-  /* width: 17.938rem; */
-  width: 17.8rem;
-  margin-top: 2.9rem;
-  padding: 0rem 1.6rem 0rem 1.8rem;
+  width: 18.066rem;
+  margin-top: 2.5rem;
+  padding: 0rem 1.6rem 0rem 1.766rem;
   border-radius: 0.7rem;
 
   background-color: var(--white);
@@ -124,8 +134,8 @@ section {
 }
 
 h2 {
-  padding: 1.5rem 0.3rem 1.5rem;
-  font-weight: 800;
+  padding: 1.5rem 0.3rem 2rem 0rem;
+  font-weight: 700;
   line-height: 2rem;
 }
 
@@ -141,7 +151,7 @@ h3 {
 }
 
 section p {
-  margin-top: 1rem;
+  margin-top: 1.066rem;
 }
 
 section a {
@@ -162,11 +172,15 @@ section a {
 /*  Footer */
 
 footer {
+  padding: 1.1rem 1rem 1rem 1rem;
+  margin-bottom: 2rem;
+  background-color: var(--deeppurple);
+}
+.footer-container {
+  padding: 1.1rem 0rem 1.1rem 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.25rem 1rem;
-
   background-color: var(--deeppurple);
 }
 
@@ -178,44 +192,42 @@ footer .miami-button {
 
 @media screen and (min-width: 44em) {
   header,
-  .intro,
   main,
   footer {
-    width: 44rem;
-    padding: 2rem 2rem 2rem 2rem;
+    width: 46rem;
   }
 
   header {
-    position: relative;
-    transform: translateY(2rem);
-    padding: 1.5rem 2rem 0 2rem;
-  }
-
-  .intro {
     display: flex;
-    overflow: hidden;
-    padding-bottom: 2rem;
+    flex-direction: row;
+    overflow: clip;
   }
 
-  .hero-image {
-    position: relative;
-    width: 150%;
-    bottom: 6rem;
-    left: 3.4rem;
-    scale: 158%;
+  .top {
+    position: absolute;
+    width: 43rem;
+    margin: 0.444rem 0rem 0rem 1.466rem;
   }
 
   .info {
-    position: static;
-    margin: 4rem 0rem 0rem 0.4rem;
-    width: 119rem;
+    position: relative;
+    min-width: 25rem;
+    padding: 7.166rem 0rem 0rem 1.444rem;
+  }
+
+  .hero-image {
+    width: 174.7%;
+    position: relative;
+    bottom: 6.366rem;
+    left: 0.4rem;
   }
 
   main {
+    width: 43.666rem;
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
-    padding-top: 2rem;
+    padding: 0.4rem 2.2rem 1.766rem 2.144rem;
   }
 
   h2 {
@@ -223,11 +235,29 @@ footer .miami-button {
   }
 
   section {
+    width: 17.8rem;
     margin: 0 0rem 3.6rem 0rem;
   }
 
+  section .main-icons,
+  h3,
+  p {
+    margin-left: 0.2rem;
+    margin-right: -0.5rem;
+  }
+
+  section a {
+    margin-left: 0.2rem;
+  }
   .business-container {
     filter: none;
+  }
+
+  footer {
+    padding-bottom: 1.2rem;
+  }
+  .footer-container {
+    margin: 0rem 1.444rem;
   }
 }
 
@@ -238,90 +268,126 @@ footer .miami-button {
     font-size: 1.125rem;
   }
   header,
-  .intro,
   main,
   footer {
     width: 76rem;
-    /* padding: 2rem 2rem 2rem 2rem; */
   }
 
   header {
+    padding: 1.1rem 2rem;
   }
 
-  header > .get-started {
-    transform: scale(1.05);
-    margin-right: 7.4rem;
-    font-size: 0.95rem;
+  .top {
+    position: absolute;
+    width: 60.85rem;
+    padding: 0rem 3rem;
+    margin: 0.1rem 0rem 0rem 5rem;
+    z-index: 1;
   }
 
-  .logo {
-    transform: scale(1.28);
-    margin-left: 7.15rem;
+  .top > .get-started {
+    width: 9.244rem;
+    height: 3.1rem;
   }
 
-  .hero-image {
-    scale: 113.8%;
-    bottom: 13.7rem;
-    left: 0.1rem;
+  .top > .get-started:hover {
+	background: var(--purple);
+	cursor: pointer;
   }
 
   .info {
-    max-width: 119rem;
-    margin-left: 7.15rem;
+    position: relative;
+    min-width: 26rem;
+    padding: 10.344rem 0rem 0rem 7.2rem;
   }
 
   h1 {
-    margin-top: 5.55rem;
-    font-size: 3.1rem;
+    font-size: 3.11rem;
+    line-height: 4rem;
   }
 
   .info > p {
-    margin-right: 10rem;
+    margin: 1.644rem 2rem 0rem 0rem;
+    line-height: 1.55rem;
   }
 
-  .info > button {
-    margin-top: 2.2rem;
-    width: 9.2rem;
+  .sunset-button {
+    margin-top: 2.266rem;
+    width: 9.3rem;
+  }
+  .sunset-button:hover {
+	background: var(--grad-sunsetwhite);
+	cursor: pointer;
+  }
+  .hero-image {
+    width: 45.766rem;
+    position: relative;
+    bottom: 8.166rem;
+    left: 11.566rem;
+  }
+
+  .logo {
+    scale: 1.29;
   }
 
   main {
-    width: 63.4865rem;
-    margin-top: -18.05rem;
-    padding: 8.257rem 8.257rem 4.3rem 8.257rem;
+    width: 63.4rem;
+    margin-top: -1rem;
+    padding: 0rem 8.3rem 4.3rem 8.366rem;
   }
 
   .main-heading {
     margin-top: 1rem;
+    padding-right: 1.7rem;
   }
 
   .main-heading h2 {
-    font-size: 1.77rem;
-    line-height: 2.3rem;
+    margin-top: 0.1rem;
+    margin-left: -0.3rem;
+    font-size: 1.788rem;
+    line-height: 2.22rem;
   }
 
   section {
-    width: 16.1rem;
+    width: 16rem;
     margin-top: 1rem;
+  }
+
+  section .main-icons {
+    margin: -1.3rem 0rem 0rem -0.066rem;
   }
 
   section h3 {
     font-size: 1.33rem;
+    margin-top: 0.044rem;
+    margin-left: -0.044rem;
   }
 
   section p {
-	min-height: 6.5rem;
+    min-height: 6.5rem;
+    margin: 1.3rem 0rem 0rem -0.066rem;
+    line-height: 1.566rem;
   }
 
   section a {
+    margin: 1.288rem 0rem 2.422rem -0.066rem;
     font-size: 1rem;
   }
 
   footer {
-	padding-top: 1.77778rem;
-	padding-bottom: 1.77778rem;
+    padding: 0.6rem 2rem;
   }
-  footer button{
-	margin-right: 7.2rem;
-	min-width: 9.2rem;
+  .footer-container .logo {
+    margin-left: 5.7rem;
+  }
+
+  footer button {
+    margin-right: 5.8rem;
+    min-width: 9.2rem;
+  }
+
+  footer button:hover {
+	 background: var(--grad-miamiwhite);
+	cursor: pointer;
   }
 }
