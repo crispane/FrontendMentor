@@ -8,10 +8,15 @@
   --pink: hsl(341, 100%, 83%);
   --white: hsl(0, 0%, 100%);
   --orange: hsl(13, 100%, 64%);
+  --orangewhite: hsl(13, 100%, 80%);
   --magenta: hsl(322, 87%, 55%);
+  --magentawhite: hsl(322, 87%, 75%);
   --blue: hsl(237, 100%, 64%);
+  --bluewhite: hsl(237, 100%, 80%);
   --grad-sunset: linear-gradient(180deg, var(--orange), var(--magenta));
+  --grad-sunsetwhite: linear-gradient(180deg, var(--orangewhite), var(--magentawhite));
   --grad-miami: linear-gradient(180deg, var(--blue), var(--magenta));
+  --grad-miamiwhite: linear-gradient(180deg, var(--bluewhite), var(--magentawhite));
   --grad-white: linear-gradient(180deg, var(--white), var(--offwhite));
   font-size: 1rem;
 }
@@ -69,7 +74,7 @@ header {
   font-size: 1rem;
   font-weight: 700;
 
-  background-color: var(--deeppurple);
+  background: var(--deeppurple);
   color: var(--white);
 }
 
@@ -84,6 +89,7 @@ h1 {
   margin-top: 2.4rem;
   font-size: 2.5rem;
   font-weight: 800;
+  color: var(--deeppurple);
 }
 
 p {
@@ -166,7 +172,7 @@ section a {
 /*  Footer */
 
 footer {
-  padding:1.1rem 1rem 1rem 1rem;
+  padding: 1.1rem 1rem 1rem 1rem;
   margin-bottom: 2rem;
   background-color: var(--deeppurple);
 }
@@ -198,9 +204,9 @@ footer .miami-button {
   }
 
   .top {
-	position: absolute;
-	width: 43rem;
-	margin: .444rem 0rem 0rem 1.466rem;
+    position: absolute;
+    width: 43rem;
+    margin: 0.444rem 0rem 0rem 1.466rem;
   }
 
   .info {
@@ -214,15 +220,14 @@ footer .miami-button {
     position: relative;
     bottom: 6.366rem;
     left: 0.4rem;
-    z-index: 1;
   }
 
   main {
-	width: 43.666rem;
+    width: 43.666rem;
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
-    padding: .4rem 2.2rem 1.766rem 2.144rem;
+    padding: 0.4rem 2.2rem 1.766rem 2.144rem;
   }
 
   h2 {
@@ -230,27 +235,29 @@ footer .miami-button {
   }
 
   section {
-	width: 17.8rem;
+    width: 17.8rem;
     margin: 0 0rem 3.6rem 0rem;
   }
 
-  section .main-icons, h3, p {
-	margin-left: .2rem;
-	margin-right: -.5rem;
+  section .main-icons,
+  h3,
+  p {
+    margin-left: 0.2rem;
+    margin-right: -0.5rem;
   }
 
   section a {
-	margin-left: .2rem;
+    margin-left: 0.2rem;
   }
   .business-container {
     filter: none;
   }
 
   footer {
-	padding-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
   }
   .footer-container {
-	margin: 0rem 1.444rem;
+    margin: 0rem 1.444rem;
   }
 }
 
@@ -260,88 +267,127 @@ footer .miami-button {
   :root {
     font-size: 1.125rem;
   }
-  header {
-    width: 80rem;
-  }
-
+  header,
   main,
   footer {
     width: 76rem;
   }
 
-  .top {
-    position: relative;
+  header {
+    padding: 1.1rem 2rem;
   }
 
-  .logo {
-    scale: 1;
+  .top {
+    position: absolute;
+    width: 60.85rem;
+    padding: 0rem 3rem;
+    margin: 0.1rem 0rem 0rem 5rem;
+    z-index: 1;
+  }
+
+  .top > .get-started {
+    width: 9.244rem;
+    height: 3.1rem;
+  }
+
+  .top > .get-started:hover {
+	background: var(--purple);
+	cursor: pointer;
   }
 
   .info {
-    width: 90rem;
-    padding: 3rem 0rem 0rem 9.2rem;
-  }
-
-  .info > p {
-    padding-right: 7rem;
-  }
-
-  .info > button {
-    scale: 0.9;
-    margin-top: 2rem;
-    margin-left: -0.6rem;
-    font-size: 1.1rem;
-  }
-  .hero-image {
-    scale: 145.5%;
-    bottom: 9.8rem;
-    left: 9.6rem;
+    position: relative;
+    min-width: 26rem;
+    padding: 10.344rem 0rem 0rem 7.2rem;
   }
 
   h1 {
-    margin-top: 5.55rem;
-    font-size: 3.1rem;
+    font-size: 3.11rem;
+    line-height: 4rem;
+  }
+
+  .info > p {
+    margin: 1.644rem 2rem 0rem 0rem;
+    line-height: 1.55rem;
+  }
+
+  .sunset-button {
+    margin-top: 2.266rem;
+    width: 9.3rem;
+  }
+  .sunset-button:hover {
+	background: var(--grad-sunsetwhite);
+	cursor: pointer;
+  }
+  .hero-image {
+    width: 45.766rem;
+    position: relative;
+    bottom: 8.166rem;
+    left: 11.566rem;
+  }
+
+  .logo {
+    scale: 1.29;
   }
 
   main {
-    width: 63.4865rem;
-    /* margin-top: -18.05rem; */
-    padding: 0rem 8.257rem 4.3rem 8.257rem;
+    width: 63.4rem;
+    margin-top: -1rem;
+    padding: 0rem 8.3rem 4.3rem 8.366rem;
   }
 
   .main-heading {
     margin-top: 1rem;
+    padding-right: 1.7rem;
   }
 
   .main-heading h2 {
-    font-size: 1.77rem;
-    line-height: 2.3rem;
+    margin-top: 0.1rem;
+    margin-left: -0.3rem;
+    font-size: 1.788rem;
+    line-height: 2.22rem;
   }
 
   section {
-    width: 16.1rem;
+    width: 16rem;
     margin-top: 1rem;
+  }
+
+  section .main-icons {
+    margin: -1.3rem 0rem 0rem -0.066rem;
   }
 
   section h3 {
     font-size: 1.33rem;
+    margin-top: 0.044rem;
+    margin-left: -0.044rem;
   }
 
   section p {
     min-height: 6.5rem;
+    margin: 1.3rem 0rem 0rem -0.066rem;
+    line-height: 1.566rem;
   }
 
   section a {
+    margin: 1.288rem 0rem 2.422rem -0.066rem;
     font-size: 1rem;
   }
 
+  footer {
+    padding: 0.6rem 2rem;
+  }
   .footer-container .logo {
-    margin-left: 7rem;
-    scale: 1;
+    margin-left: 5.7rem;
   }
 
   footer button {
-    margin-right: 6.7rem;
+    margin-right: 5.8rem;
     min-width: 9.2rem;
+  }
+
+  footer button:hover {
+	 background: var(--grad-miamiwhite);
+	cursor: pointer;
   }
 }
