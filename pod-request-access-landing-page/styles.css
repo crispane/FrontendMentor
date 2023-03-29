@@ -1,8 +1,57 @@
 :root {
-  font-size: 1rem;
+  --white: #ffffff;
+  --eigengrau: #121725;
+  --lightsteelblue: #c2cbe5;
+  --shamrock: #54E6AF;
+  /* font-size: 1rem; */
+}
+
+* {
+  margin: 0;
+  font-family: "Chivo", sans-serif;
+  font-weight: 100;
 }
 
 body {
-  color: darkgreen;
-  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
+
+header{
+  width: 375px;
+  background-color: var(--eigengrau);
+  text-align: center;
+}
+
+main {
+  width: 375px;
+  height: 482px;
+  background-color: var(--eigengrau);
+  color: var(--lightsteelblue);
+  text-align: center;
+}
+
+img {
+padding-top: 62px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 38px;
+  padding-top: 52px;
+  color: var(--shamrock);
+}
+
+h1 span {
+color: var(--white);
+}
+
+p {
+  padding: 24px;
+}
+
+
