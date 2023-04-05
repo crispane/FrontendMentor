@@ -2,7 +2,8 @@
   --white: #ffffff;
   --eigengrau: #121725;
   --lightsteelblue: #c2cbe5;
-  --shamrock: #54E6AF;
+  --shamrock: #54e6af;
+  --darkbyzantineblue: #2C344B;
   /* font-size: 1rem; */
 }
 
@@ -17,41 +18,78 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-}
-
-header{
-  width: 375px;
-  background-color: var(--eigengrau);
-  text-align: center;
 }
 
 main {
   width: 375px;
-  height: 482px;
+  height: 667px;
+  background-image: url("assets/mobile/image-host.jpg");
   background-color: var(--eigengrau);
+  box-shadow: inset 0 0 0 1000px rgba(18, 23, 37, 0.9);
   color: var(--lightsteelblue);
   text-align: center;
 }
 
-img {
-padding-top: 62px;
+.logo {
+  margin-top: 62px;
 }
 
 h1 {
   text-transform: uppercase;
   font-size: 26px;
   line-height: 38px;
-  padding-top: 52px;
+  margin-top: 52px;
   color: var(--shamrock);
 }
 
 h1 span {
-color: var(--white);
+  color: var(--white);
 }
 
 p {
-  padding: 24px;
+  font-size: 15px;
+  margin: 24px;
+  line-height: 25px;
 }
 
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 30px;
+  margin-bottom: 44px;
+}
 
+.link {
+  height: 17px;
+  opacity: 0.6;
+}
+
+.google {
+  height: 11px;
+}
+
+.pocket {
+  height: 15px;
+}
+
+input {
+  position: relative;
+  border: none;
+  border-radius: 28px;
+  width: 257px;
+  height: 46px;
+  background-color: var(--darkbyzantineblue);
+  color: var(--lightsteelblue);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0px 30px;
+}
+
+.button {
+  width: 317px;
+  margin-top: 16px;
+  background-color: var(--shamrock);
+  color: var(--eigengrau);
+
+}
